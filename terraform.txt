@@ -1,0 +1,11 @@
+1. Установка
+    AWS CLI
+    Terraform
+2.  aws configure
+    terraform init
+4. Create file: connection.tf
+
+provider "aws" {
+  region  = "eu-central-1"
+  profile = "ozi-user"
+}
