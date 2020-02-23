@@ -13,6 +13,9 @@ resource "aws_security_group" "jb_sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  tags = {
+    Name = "SG-JumpBox"
+  }
 }
 
 resource "aws_security_group" "web-sg" {
@@ -36,6 +39,10 @@ resource "aws_security_group" "web-sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+  tags = {
+    Name = "SG-WEB"
+  }
 }
 
 resource "aws_security_group" "rds-sg" {
@@ -52,5 +59,9 @@ resource "aws_security_group" "rds-sg" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "SG-RDS"
   }
 }
