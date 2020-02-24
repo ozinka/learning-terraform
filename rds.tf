@@ -20,5 +20,5 @@ resource "aws_db_instance" "web-mysql" {
 
 
 resource "aws_db_subnet_group" "rds-sg" {
-  subnet_ids = [aws_subnet.subnet_prv.id, aws_subnet.subnet_pbl.id]
+  subnet_ids = [aws_subnet.subnet_prv1.id, aws_subnet.subnet_prv2.id]
 }
