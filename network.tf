@@ -44,7 +44,7 @@ resource "aws_subnet" "subnet_pbl_web" {
   availability_zone = "eu-central-1c"
 
   tags = {
-    Name = "Public Subnet"
+    Name = "Public Subnet WEB"
   }
 }
 
@@ -54,7 +54,7 @@ resource "aws_subnet" "subnet_pbl_jb" {
   availability_zone = "eu-central-1c"
 
   tags = {
-    Name = "Public Subnet"
+    Name = "Public Subnet JB"
   }
 }
 
